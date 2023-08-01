@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="/static/css/signup.css">
+</head>
+<body>
+    <div class="login-form-container">
+    
+        <form action="/signup" method="POST">
+            <h3>sign up</h3>
+            <span>username</span>
+            <input type="text" name="name" class="box" placeholder="enter your full name" id="">
+            <span>email id</span>
+            <input type="email" name="email" class="box" placeholder="enter your email" id="">
+            <span>password</span>
+            <input type="password" name="password" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me"> remember me</label>
+            </div>
+            <input type="submit" value="sign up" class="btn">
+            <p>Already have an account? <a href="{{url_for('main_Page')}}">Log In</a></p>
+        </form>
+    
+    </div>
+</body>
+</html>

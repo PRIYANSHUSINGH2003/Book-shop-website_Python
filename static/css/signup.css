@@ -1,0 +1,113 @@
+:root{
+    --green:#ff7500;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --black:rgb(241, 4, 4);
+    --light-color:rgb(28, 6, 88);
+    --dark-color:#219150;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    transition:width none;
+}
+
+.login-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(255,255,255,.9);
+    z-index: 10000;
+    height:100%;
+    width:100%;
+}
+
+.login-form-container form{
+    background:#fff;
+    border:var(--border);
+    width:40rem;
+    padding:2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin:2rem;
+}
+
+.login-form-container form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color:var(--black);
+    text-align: center;
+}
+
+.login-form-container form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.login-form-container form .box{
+    width: 100%;
+    margin:.3rem 0;
+    font-size: .9rem;
+    border:var(--border);
+    border-radius: .5rem;
+    padding:1rem 1.2rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.login-form-container form .checkbox{
+    display:flex;
+    align-items: center;
+    gap:.5rem;
+    padding:1rem 0;
+}
+
+.login-form-container form .checkbox label{
+    font-size: 1.2rem;
+    color:var(--light-color);
+    cursor: pointer;
+}
+
+.login-form-container form .btn{
+    text-align: center;
+    width:100%;
+    margin:1.5rem 0;
+}
+
+.btn{
+    margin-top: 1rem;
+    display:inline-block;
+    padding:.9rem 3rem;
+    border-radius: .5rem;
+    color:#fff;
+    background:var(--green);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background:var(--dark-color);
+}
+
+@media (max-width:991px) {
+    .login-form-container form h3{
+        font-size: 2.5rem;
+    }
+    .login-form-container form span{
+        font-size: 1rem;
+    }
+    .login-form-container form .box{
+        font-size: 1rem;
+    }
+    .login-form-container form .checkbox label{
+        font-size: 1rem;
+    }
+}
